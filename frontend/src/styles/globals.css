@@ -1,0 +1,78 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  @apply antialiased;
+}
+
+html,
+body {
+  @apply bg-bg-primary text-white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #39ff14;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2ccc0f;
+}
+
+/* Neon glow effects */
+.neon-glow {
+  @apply shadow-neon-glow;
+}
+
+.glow-green {
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+}
+
+.glow-pink {
+  box-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Focus states */
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  @apply outline-none ring-2 ring-neon-cyan ring-offset-2 ring-offset-bg-primary;
+}
+
+/* Input styles */
+input,
+textarea {
+  @apply bg-bg-secondary border-2 border-bg-tertiary rounded-lg p-3;
+  @apply text-white placeholder-gray-500;
+  @apply focus:border-neon-cyan focus:outline-none;
+}
+
+/* Disabled states */
+input:disabled,
+textarea:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}

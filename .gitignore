@@ -1,0 +1,76 @@
+# Environment Variables (NEVER COMMIT SECRETS)
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+.next/
+dist/
+build/
+out/
+
+# Backend build
+target/
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.env.local.swp
+
+# IDE specific
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Testing
+coverage/
+.nyc_output/
+
+# Docker (exclude compose for GitHub)
+docker-compose.yml
+
+# Project documentation (only README.md is pushed)
+docs/
+GETTING_STARTED.md
+ENVIRONMENT_SETUP.md
+PROJECT_COMPLETION.md
+INDEX.md
+
+# Misc
+*.log
+.cache/
+.parcel-cache
+.vercel
+.turbo
+
+# OS
+Thumbs.db
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+.m2/
