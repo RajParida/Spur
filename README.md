@@ -131,11 +131,6 @@ mvn spring-boot:run
 
 ### GitHub Setup
 
-#### Environment Variables
-1. Create `frontend/.env.local` from `.env.local.example`
-2. Add your Supabase and Google OAuth credentials
-3. **Never commit `.env.local` or `.env` files** (protected by `.gitignore`)
-
 #### GitHub Pages Deployment
 The frontend automatically deploys to GitHub Pages on every push to `main`:
 
@@ -143,21 +138,6 @@ The frontend automatically deploys to GitHub Pages on every push to `main`:
 2. Set deployment source to **GitHub Actions**
 3. The workflow `.github/workflows/deploy-pages.yml` handles everything
 4. Visit `https://yourusername.github.io/spur` after first deployment
-
-#### For Custom Domain
-Add to **Settings → Pages → Custom domain**: `your-domain.com`
-
-## Deployment
-
-### AWS Deployment
-- Frontend: AWS S3 + CloudFront
-- Backend: AWS EC2 or ECS
-- Database: AWS RDS or Supabase
-
-See documentation for detailed instructions.
-
-### GitHub Pages
-Frontend automatically deploys via GitHub Actions on push to `main` branch.
 
 ## Contributing
 
